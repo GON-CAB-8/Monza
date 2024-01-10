@@ -17,7 +17,7 @@ public class FileLoaderController {
 
     @GetMapping("/cargar-archivo")
     public String cargarArchivo() {
-        return "archivo/cargar";
+        return "archivo-carga";
     }
 
     @PostMapping("/cargar-archivo")
@@ -25,7 +25,9 @@ public class FileLoaderController {
         // Lógica para cargar el archivo y procesar los datos
         // Puedes pasar información adicional al modelo si es necesario
         model.addAttribute("mensaje", "Archivo cargado con éxito");
-        return "archivo/cargar";
+        return "archivo-carga";
     }
+
+
 
 }
